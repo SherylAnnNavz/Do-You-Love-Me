@@ -20,4 +20,9 @@ noBtn.addEventListener("mouseover", () => {
 
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
+
+  // Increase the size of the "Yes" button
+  let currentSize = parseInt(window.getComputedStyle(yesBtn).fontSize);
+  currentSize += 5; // Increase size by 5 pixels
+  yesBtn.style.fontSize = currentSize + "px";
 });
