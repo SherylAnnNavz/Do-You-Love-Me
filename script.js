@@ -20,9 +20,11 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 
-  
+
   let currentSize = parseInt(window.getComputedStyle(yesBtn).fontSize);
   currentSize += 5;
   yesBtn.style.fontSize = currentSize + "px";
+  yesBtn.style.width = (parseInt(yesBtn.style.width) + 10) + "px"; 
+  yesBtn.style.height = (parseInt(yesBtn.style.height) + 10) + "px";
   question.style.fontSize = currentSize + "px";
 });
