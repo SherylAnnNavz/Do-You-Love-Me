@@ -1,13 +1,12 @@
 const wrapper = document.querySelector(".wrapper");
 const question = document.querySelector(".question");
-const gif = document.querySelector(".gif");
+const image = document.querySelector(".image");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "I love you too! uWu 😘";
-  gif.src =
-    "https://media1.giphy.com/media/iCVzZwwE6QNAV2tEE0/giphy.gif";
+  image.src = "https://raw.githubusercontent.com/SherylAnnNavz/Do-You-Love-Me/master/IMG_6424.jpeg";
 });
 
 noBtn.addEventListener("mouseover", () => {
@@ -21,8 +20,8 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 
-  // Increase the size of the "Yes" button
+
   let currentSize = parseInt(window.getComputedStyle(yesBtn).fontSize);
-  currentSize += 5; // Increase size by 5 pixels
+  currentSize += 5;
   yesBtn.style.fontSize = currentSize + "px";
 });
