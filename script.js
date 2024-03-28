@@ -9,6 +9,10 @@ yesBtn.addEventListener("click", () => {
   image.src = "https://raw.githubusercontent.com/SherylAnnNavz/Do-You-Love-Me/master/IMG_6424.jpeg";
 });
 
+yesBtn.remove();
+noBtn.remove();
+
+
 noBtn.addEventListener("mouseover", () => {
   const noBtnRect = noBtn.getBoundingClientRect();
   const maxX = window.innerWidth - noBtnRect.width;
@@ -20,10 +24,10 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 
-  // Increase the size of the button and its text
+
   let currentSize = parseInt(window.getComputedStyle(yesBtn).fontSize);
   currentSize += 5;
   yesBtn.style.fontSize = currentSize + "px";
-  yesBtn.style.width = (parseInt(window.getComputedStyle(yesBtn).width) + 10) + "px"; // Increase button width
-  yesBtn.style.height = (parseInt(window.getComputedStyle(yesBtn).height) + 10) + "px"; // Increase button height
+  yesBtn.style.width = (parseInt(window.getComputedStyle(yesBtn).width) + 10) + "px"; 
+  yesBtn.style.height = (parseInt(window.getComputedStyle(yesBtn).height) + 10) + "px"; 
 });
