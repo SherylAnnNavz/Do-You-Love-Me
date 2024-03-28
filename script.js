@@ -9,8 +9,8 @@ yesBtn.addEventListener("click", () => {
   image.src = "https://raw.githubusercontent.com/SherylAnnNavz/Do-You-Love-Me/master/IMG_6424.jpeg";
   
 
-  yesBtn.remove();
-  noBtn.remove();
+  yesBtn.style.display = "none";
+  noBtn.style.display = "none";
 });
 
 noBtn.addEventListener("mouseover", () => {
