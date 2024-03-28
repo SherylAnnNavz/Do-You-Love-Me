@@ -7,11 +7,11 @@ const noBtn = document.querySelector(".no-btn");
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "I love you too! uWu 😘";
   image.src = "https://raw.githubusercontent.com/SherylAnnNavz/Do-You-Love-Me/master/IMG_6424.jpeg";
+  
+
+  yesBtn.remove();
+  noBtn.remove();
 });
-
-yesBtn.remove();
-noBtn.remove();
-
 
 noBtn.addEventListener("mouseover", () => {
   const noBtnRect = noBtn.getBoundingClientRect();
